@@ -29,3 +29,13 @@
   - Methods:
     - `greeting()`: returns a string that says "Hi, my name is `name`."
     - `bio()`: returns a string that says "My name is `name`, I'm `age` years old, and my interests are `interests`."
+
+---
+
+#### Tips on how to solve problems
+
+- Plan what would be the steps to solve the problem
+- You should split the problem into multiple steps
+- Handle each step at a time as you planned
+
+**Good luck ✌️**
