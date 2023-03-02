@@ -11,11 +11,7 @@
 - Remember, `googling the solution is not what this assignment is expecting`
 - Solve as many challenges as you could and write your solutions in `index.js` file
 
-<br/>
-
 ---
-
-<br/>
 
 #### The challenges:
 
