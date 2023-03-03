@@ -1,3 +1,13 @@
+//Test Arrays
+
+/**
+ * [1,2,3,5]
+ * [2,3,5,6]
+ * [7,9,10,11] 
+ * 
+ * [100,9,34,11] 
+*/
+
 // Challenge: Find the missing number
 
 /**
@@ -25,12 +35,27 @@ function findTheNumber(numbers) {
     return missingNumber;
 }
 
-//Test
+console.log(findTheNumber([1, 2, 4, 5, 6]))
+
+// Challenge: Find the minimum and maximum numbers in an array:
 
 /**
- * [1,2,3,5]
- * [2,3,5,6]
- * [7,9,10,11] 
-*/
+ * Order the array in asscending order
+ * min value is going to match with the first sorted array index
+ * and the same will happend to the max value with the last element inside 
+ * the sorted array
+ */
 
-console.log(findTheNumber([1, 2, 4, 5, 6]))
+function minMax(numbers) {
+    let minValue;
+    let maxValue;
+
+
+    const sortedList = numbers.sort((a, b) => a - b);
+    lastIndex = sortedList.length - 1;
+
+    return { minValue: sortedList[0], maxValue: sortedList[lastIndex] }
+
+}
+
+console.log(minMax([100, 9, 34, 11]))
