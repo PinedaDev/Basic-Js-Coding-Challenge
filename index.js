@@ -3,8 +3,6 @@
 /**
  * First and last indexes are never going to miss
  * Store the previous number after each secuence
- * 
- * solved in - 26 min, 32s
  */
 
 function findTheNumber(numbers) {
