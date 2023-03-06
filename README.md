@@ -1,17 +1,5 @@
 # JavaScript basic coding challenges
 
-#### Please read these carefully:
-
-- The idea of these challenges `is not to google the solution.` try your best thinking how can we solve such problems.
-
-- You should be aware of the `basic syntax + problem solving skills`
-
-- It's better to try your best to figure it out. `do a peer programming with your group mate/s (or go solo)`. think together on how to figure it out and `have fun!`
-
-- Remember, `googling the solution is not what this assignment is expecting`
-- Solve as many challenges as you could and write your solutions in `index.js` file
-
----
 
 #### The challenges:
 
@@ -31,11 +19,3 @@
     - `bio()`: returns a string that says "My name is `name`, I'm `age` years old, and my interests are `interests`."
 
 ---
-
-#### Tips on how to solve problems
-
-- Plan what would be the steps to solve the problem
-- You should split the problem into multiple steps
-- Handle each step at a time as you planned
-
-**Good luck ✌️**
