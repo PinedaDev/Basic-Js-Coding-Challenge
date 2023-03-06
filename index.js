@@ -1,8 +1,17 @@
 // Challenge: Find the missing number
 
+/**
+ * First and last indexes are never going to miss
+ * Store the previous number after each secuence
+ * to compare if the current and previous number are consecuttives,
+ * if not the the number behind the current number  is the missing one
+ */
+
 function findTheNumber(numbers) {
     let prevNumber;
     let missingNumber;
+
+    numbers.sort((a, b) => a - b)
 
     numbers.forEach((current_number, index) => {
         if (index === 0) {
@@ -19,9 +28,16 @@ function findTheNumber(numbers) {
     return missingNumber;
 }
 
-console.log(findTheNumber([1, 2, 3, 5]))
+console.log(findTheNumber([1, 5, 3, 2]))
 
 // Challenge: Find the minimum and maximum numbers in an array:
+
+/**
+ * Order the array in asscending order
+ * min value is going to match with the first sorted array index
+ * and the same will happend to the max value with the last element inside 
+ * the sorted array
+ */
 
 function minMax(numbers) {
     const sortedList = numbers.sort((a, b) => a - b);
@@ -33,7 +49,14 @@ console.log(minMax([100, 9, 34, 11]))
 
 // Challenge: Find the first non-repeated character in a string
 
-//consecutive characters
+//solution 1: for a string of consecutive characters
+/**
+ * Itinerate throug the array and compare if 
+ * the current interaction value is not equal to 
+ * the previous and next indexes relative to its 
+ * position
+ */
+
 function findTheUnique(myString) {
     arrayOfStrings = [...myString]
     console.log(arrayOfStrings)
@@ -47,7 +70,15 @@ function findTheUnique(myString) {
     return uniqueChr
 }
 
-//mix string
+//solution 2 for any given string of characters
+/**
+ * Itinerate throug the array and check if 
+ * the current interaction index is equal to the index of the last 
+ * occurrence of the specified current interaction inside the whole string 
+ * if they are equal it means that the current interaction is the only one
+ * inside the string 
+ */
+
 function nonRepeted(str) {
     let uniqueChr = "";
     for (let i = 0; i < str.length; i++) {
